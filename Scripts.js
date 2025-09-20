@@ -61,12 +61,10 @@
                                 month: 'long', 
                                 day: 'numeric' 
                             })}</span> • 
-                            <span>By ${post.author}</span> • 
                             <span>${post.category}</span>
                         </div>
                         <div class="blog-post-content">
                             ${post.content}
-                            <a href="#" class="read-more">Read Full Article</a>
                         </div>
                     `;
 

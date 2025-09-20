@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Introducing the A&A Signature Series",
+    "author": "Alessandro Warwar",
+    "date": "2025-01-15T00:00:00Z",
+    "category": "Guitar News",
+    "excerpt": "We are excited to announce the launch of our latest guitar model, the A&A Signature Series.",
+    "content": "<p>We are excited to announce the launch of our latest guitar model, the A&A Signature Series. This model features a unique blend of traditional craftsmanship and modern technology, offering unparalleled sound quality and playability.</p><h3>Key Features</h3><p>The Signature Series incorporates premium tonewoods, custom-wound pickups, and our proprietary neck construction technique for enhanced sustain and resonance.</p><p>Each guitar is meticulously crafted by our master luthiers, ensuring every detail meets our exacting standards. From the carefully selected maple neck to the custom-designed bridge system, every component is chosen for its contribution to the instrument's overall performance.</p>",
+    "published": true,
+    "tags": ["new-release", "signature-series", "craftsmanship"]
+  },
+  {
+    "id": 2,
+    "title": "The Art of Guitar Maintenance",
+    "author": "Anthony Romaniello",
+    "date": "2025-01-10T00:00:00Z",
+    "category": "Tips & Guides",
+    "excerpt": "Proper guitar maintenance is essential for preserving your instrument's tone and extending its lifespan.",
+    "content": "<p>Proper guitar maintenance is essential for preserving your instrument's tone and extending its lifespan. In this comprehensive guide, we'll walk you through the essential steps every guitarist should know.</p><h3>Daily Care Tips</h3><p>Regular cleaning and proper storage can prevent most common guitar issues. Learn the techniques professionals use to keep their instruments in pristine condition.</p><p>Start by wiping down your strings after each playing session. Use a clean, dry cloth to remove oils and moisture that can cause corrosion. Store your guitar in a case or on a proper stand, away from direct sunlight and extreme temperatures.</p>",
+    "published": true,
+    "tags": ["maintenance", "tips", "guitar-care"]
+  },
+  {   
+    "id": 3,
+    "title": "Behind the Scenes: Our Workshop Tour",
+    "author": "A&A Team",
+    "date": "2025-01-05T00:00:00Z",
+    "category": "Company News",
+    "excerpt": "Take an exclusive look inside our guitar workshop where master craftsmen bring each instrument to life.",
+    "content": "<p>Take an exclusive look inside our guitar workshop where master craftsmen bring each instrument to life. From selecting premium woods to the final setup, discover the meticulous process behind every A&A guitar.</p><p>Our workshop combines traditional hand-tools with modern precision equipment, allowing us to achieve the perfect balance between artisanal craftsmanship and consistent quality.</p><h3>The Selection Process</h3><p>Every piece of wood is carefully inspected for grain patterns, density, and tonal qualities before being approved for use in our instruments.</p>",
+    "published": true,
+    "tags": ["workshop", "craftsmanship", "behind-the-scenes"]
+  },
+ {
+  "id": 4,
+  "title": "Implementing the Light/Dark Mode Switcher",
+  "author": "Alessandro Warwar",
+  "date": "2025-08-04T00:00:00Z",
+  "category": "Development Process",
+  "excerpt": "A behind-the-scenes look at how we added a user-friendly light/dark mode toggle to our site.",
+  "content": "<p>For Part One, I wanted users to easily switch between light and dark modes. I wrote a <code>changeMode()</code> JavaScript function that toggles the <code>darkMode</code> and <code>lightMode</code> classes on the <code>body</code> element. I placed the toggle button in the navbar for visibility on every page. The function also updates the logo and icon images based on the mode. To remember the user's preference, I used cookies and checked them on page load to set the correct mode. In my CSS, I used selectors like <code>.darkMode</code> to change colors, backgrounds, and button styles for dark mode. One challenge was making sure the toggle button itself didn't get the dark mode button styling, so I excluded it with <code>:not(.changeScreenModeIcon)</code> in my CSS. This made the switch seamless and visually consistent across the site.</p>",
+  "published": true,
+  "tags": ["light-mode", "dark-mode", "javascript", "ui"]
+},
+{
+  "id": 5,
+  "title": "Building a Dynamic Blog Section",
+  "author": "Anthony Romaniello",
+  "date": "2025-08-04T00:00:00Z",
+  "category": "Development Process",
+  "excerpt": "How we made our blog section dynamic using JSON and JavaScript.",
+  "content": "<p>For Part Two, I wanted the blog to be easy to update without editing HTML. I created a <code>Posts.json</code> file to store all blog post data as an array of objects. Each object contains fields like <code>id</code>, <code>title</code>, <code>author</code>, <code>date</code>, <code>excerpt</code>, and <code>content</code>. In my JavaScript, I used <code>fetch()</code> to load <code>Posts.json</code> and then looped through the posts to generate HTML for each one. I inserted the generated HTML into the blog container on the page. This lets me add or edit posts just by updating the JSON file. I also added logic to only display posts where <code>published</code> is <code>true</code>. This approach keeps the blog scalable and easy to maintain, and separates content from layout and logic.</p>",
+  "published": true,
+  "tags": ["blog", "dynamic-content", "json", "javascript"]
+}
+]

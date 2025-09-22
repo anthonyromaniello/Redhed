@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>A&A Guitar Co.</title>
+    <title>Redhed</title>
     <link rel="stylesheet" href="index.css">
     <!-- Link to Google Fonts for Montserrat -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
@@ -158,7 +158,7 @@ setModeClass();
         <div class="service-icon-block">
             <img src="BlackTee.png" alt="Custom Builds Icon" style="width: 400px; height: 400px; margin-bottom:0.7em;">
 
-            <a href="#"><div class="service-button">Black Tee - $20</div></a>
+            <button class="service-button" onclick="reserveMerch(1, 101)">Black Tee - $20</button>
         </div>
         
     </div>
@@ -217,6 +217,16 @@ setModeClass();
                 }
             }
             setCookie('mode', currentMode, 30);
+        }
+        function reserveMerch(customerId, merchId) {
+            fetch('/reserve', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ customerId, merchId })
+            })
+            .then(res => res.json())
+            .then(data => alert(data.message))
+            .catch(err => alert('Error: ' + err));
         }
     </script>
     <!-- Navbar footer inserted from Index.js -->

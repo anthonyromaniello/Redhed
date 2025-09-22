@@ -1,0 +1,27 @@
+// Install oracledb: npm install oracledb express
+const express = require('express');
+const oracledb = require('oracledb');
+const app = express();
+app.use(express.json());
+
+app.post('/reserve', async (req, res) => {
+  const { customerId, merchId } = req.body;
+  try {
+    const conn = await oracledb.getConnection({
+      user: 'youruser',
+      password: 'yourpassword',
+      connectString: 'localhost/XEPDB1'
+    });
+    await conn.execute(
+      `INSERT INTO orders VALUES (orders(:customerId, :merchId, SYSDATE, 0))`,
+      { customerId, merchId }
+    );
+    await conn.commit();
+    await conn.close();
+    res.json({ message: 'Reservation successful!' });
+  } catch (err) {
+    res.status(500).json({ message: 'Reservation failed: ' + err.message });
+  }
+});
+
+app.listen(3000, () => console.log('Server running on port 3000'));

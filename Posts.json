@@ -5,7 +5,7 @@
     "date": "2025-03-30T00:00:00Z",
     "category": "New Releases",
     "excerpt": "Our first single, Seveneleven, is now available on all major streaming platforms.",
-    "content": "<p>Our first single, Seveneleven, is now available on all major streaming platforms.</p> <div><img src='seveneleven.png' alt='Seveneleven Album Art'></div> <a href=\"https://open.spotify.com/track/6ri0CjdHKUFbRh5y8R2yFa?si=282c98cfdf2c4c4b\" class=\"read-more\" target=\"_blank\">Listen on Spotify!</a>",
+    "content": "<p>Our first single, Seveneleven, is now available on all major streaming platforms.</p> <div><img src='resources/seveneleven.png' alt='Seveneleven Album Art'></div> <a href=\"https://open.spotify.com/track/6ri0CjdHKUFbRh5y8R2yFa?si=282c98cfdf2c4c4b\" class=\"read-more\" target=\"_blank\">Listen on Spotify!</a>",
     "published": true,
     "tags": ["new-release", "singles"]
   },
@@ -15,7 +15,7 @@
     "date": "2025-08-10T00:00:00Z",
     "category": "New Releases",
     "excerpt": "Our newest single 'Little Tragedies' is out now on all major streaming platforms! we put our hearts into this one, so show it some love! thank you to everyone who helped make this project a reality",
-    "content": "<p>Our newest single 'Little Tragedies' is out now on all major streaming platforms! we put our hearts into this one, so show it some love! thank you to everyone who helped make this project a reality</p> <div><img src='little_tragedies.png' alt='Little Tragedies Album Art'></div> <a href=\"https://open.spotify.com/track/2lCFhRdA7THL0dTKcIOkjl?si=f38732c5f1c04e32\" class=\"read-more\" target=\"_blank\">Listen on Spotify!</a>",
+    "content": "<p>Our newest single 'Little Tragedies' is out now on all major streaming platforms! we put our hearts into this one, so show it some love! thank you to everyone who helped make this project a reality</p> <div><img src='resources/little_tragedies.png' alt='Little Tragedies Album Art'></div> <a href=\"https://open.spotify.com/track/2lCFhRdA7THL0dTKcIOkjl?si=f38732c5f1c04e32\" class=\"read-more\" target=\"_blank\">Listen on Spotify!</a>",
     "published": true,
     "tags": ["new-release", "singles"]
   }

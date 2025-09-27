@@ -21,11 +21,11 @@ function setModeClass() {
       const iconImg = document.querySelector('.changeScreenModeIcon img');
       
       if (mode === 'darkMode') {
-        if (iconImg) iconImg.src = 'lightModeIcon.png';
-        if (CompanyLogo) CompanyLogo.src = 'RedhedLogoDM.png';
+        if (iconImg) iconImg.src = 'resources/lightModeIcon.png';
+        if (CompanyLogo) CompanyLogo.src = 'resources/RedhedLogoDM.png';
       } else {
-        if (iconImg) iconImg.src = 'darkModeIcon.png';
-        if (CompanyLogo) CompanyLogo.src = 'RedhedLogoLM.png';
+        if (iconImg) iconImg.src = 'resources/darkModeIcon.png';
+        if (CompanyLogo) CompanyLogo.src = 'resources/RedhedLogoLM.png';
       }
     }, 100); // Small delay to ensure navbar is loaded
     
@@ -66,7 +66,7 @@ setModeClass();
         background: #ff5252;
       }
       body {
-        background: url('BlackGuitarBackground.jpg') no-repeat center center fixed;
+        background: url('resources/BlackGuitarBackground.jpg') no-repeat center center fixed;
         background-size: cover;
       }   
 
@@ -84,13 +84,6 @@ setModeClass();
         border: #000000 5px solid;
         opacity: 0.9;
       }
-
-      body.darkMode {
-        background: url('whiteGuitarBackground.jpg') no-repeat center center fixed;
-        background-size: cover;
-      }
-
-  
       .contactform-control {
         padding: 12px 16px;
         font-size: 1.1em;
@@ -98,7 +91,7 @@ setModeClass();
         border-radius: 8px;
         background: #fafafa;
         box-sizing: border-box;
-        text-align: center;        /* Center text inside boxes */
+        text-align: center;    /* Center text inside boxes */
         width: 220px;              /* Adjust width as needed */
         max-width: 100%;
         display: block;
@@ -131,7 +124,7 @@ setModeClass();
 			}
 
    </style>
-    <title>A&A Guitar Co.</title>
+    <title>Redhed</title>
     <link rel="stylesheet" href="index.css">
     <!-- Link to Google Fonts for Montserrat -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
@@ -205,10 +198,10 @@ setModeClass();
 							document.body.classList.add('lightMode');
 							currentMode = 'lightMode';
 							if (iconImg) {
-								iconImg.src = 'darkModeIcon.png'; // light mode icon
+								iconImg.src = 'resources/darkModeIcon.png'; // light mode icon
 							}
                             if (CompanyLogo) {
-                                CompanyLogo.src = 'RedhedLogoLM.png'; // light mode logo
+                                CompanyLogo.src = 'resources/RedhedLogoLM.png'; // light mode logo
                             }
 						}
 						else if (document.body.classList.contains('lightMode')) {
@@ -216,10 +209,10 @@ setModeClass();
 							document.body.classList.add('darkMode');
 							currentMode = 'darkMode';
 							if (iconImg) {
-								iconImg.src = 'lightModeIcon.png'; // dark mode icon
+								iconImg.src = 'resources/lightModeIcon.png'; // dark mode icon
 							}
                             if (CompanyLogo) {
-                                CompanyLogo.src = 'RedhedLogoDM.png'; // dark mode logo
+                                CompanyLogo.src = 'resources/RedhedLogoDM.png'; // dark mode logo
                             }
 						}
 						setCookie('mode', currentMode, 30);

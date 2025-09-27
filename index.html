@@ -25,11 +25,11 @@ function setModeClass() {
       const iconImg = document.querySelector('.changeScreenModeIcon img');
       
       if (mode === 'darkMode') {
-        if (iconImg) iconImg.src = 'lightModeIcon.png';
-        if (CompanyLogo) CompanyLogo.src = 'RedhedLogoDM.png';
+        if (iconImg) iconImg.src = 'resources/lightModeIcon.png';
+        if (CompanyLogo) CompanyLogo.src = 'resources/RedhedLogoDM.png';
       } else {
-        if (iconImg) iconImg.src = 'darkModeIcon.png';
-        if (CompanyLogo) CompanyLogo.src = 'RedhedLogoLM.png';
+        if (iconImg) iconImg.src = 'resources/darkModeIcon.png';
+        if (CompanyLogo) CompanyLogo.src = 'resources/RedhedLogoLM.png';
       }
     }, 100); // Small delay to ensure navbar is loaded
     
@@ -202,27 +202,27 @@ setModeClass();
 			<!-- Co-Founder Cards -->
 			<div class="founders-container">
 				<div class="founderCard">
-					<img src="Jimi Hendrix.jpg" alt="Founder 1" style="width:120px; height: 180px; margin-bottom:1em;">
+					<img src="resources/Jimi Hendrix.jpg" alt="Founder 1" style="width:120px; height: 180px; margin-bottom:1em;">
 					<div class="founder-name">Anthony Romaniello</div>
 					<div class="founder-title">Lead Guitarist</div>
 				</div>
 				<div class="founderCard">
-					<img src="Slash.jpg" alt="Founder 2" style="width:120px; height: 180px; margin-bottom:1em;">
+					<img src="resources/Slash.jpg" alt="Founder 2" style="width:120px; height: 180px; margin-bottom:1em;">
 					<div class="founder-name">Jack Kirwan</div>
 					<div class="founder-title">Rythym Guitarist</div>
 				</div>
 				<div class="founderCard">
-					<img src="Slash.jpg" alt="Founder 2" style="width:120px; height: 180px; margin-bottom:1em;">
+					<img src="resources/Slash.jpg" alt="Founder 2" style="width:120px; height: 180px; margin-bottom:1em;">
 					<div class="founder-name">Triss Raggiunti</div>
 					<div class="founder-title">Lead Vocalist</div>
 				</div>
 				<div class="founderCard">
-					<img src="Slash.jpg" alt="Founder 2" style="width:120px; height: 180px; margin-bottom:1em;">
+					<img src="resources/Slash.jpg" alt="Founder 2" style="width:120px; height: 180px; margin-bottom:1em;">
 					<div class="founder-name">Jaylan Morley</div>
 					<div class="founder-title">Bassist</div>
 				</div>
 				<div class="founderCard">
-					<img src="Slash.jpg" alt="Founder 2" style="width:120px; height: 180px; margin-bottom:1em;">
+					<img src="resources/Slash.jpg" alt="Founder 2" style="width:120px; height: 180px; margin-bottom:1em;">
 					<div class="founder-name">Anthony Arrigo</div>
 					<div class="founder-title">Drummer</div>
 				</div>
@@ -268,10 +268,10 @@ setModeClass();
 							document.body.classList.add('lightMode');
 							currentMode = 'lightMode';
 							if (iconImg) {
-								iconImg.src = 'darkModeIcon.png'; // light mode icon
+								iconImg.src = 'resources/darkModeIcon.png'; // light mode icon
 							}
                             if (CompanyLogo) {
-                                CompanyLogo.src = 'RedhedLogoLM.png'; // light mode logo
+                                CompanyLogo.src = 'resources/RedhedLogoLM.png'; // light mode logo
                             }
 						}
 						else if (document.body.classList.contains('lightMode')) {
@@ -279,10 +279,10 @@ setModeClass();
 							document.body.classList.add('darkMode');
 							currentMode = 'darkMode';
 							if (iconImg) {
-								iconImg.src = 'lightModeIcon.png'; // dark mode icon
+								iconImg.src = 'resources/lightModeIcon.png'; // dark mode icon
 							}
                             if (CompanyLogo) {
-                                CompanyLogo.src = 'RedhedLogoDM.png'; // dark mode logo
+                                CompanyLogo.src = 'resources/RedhedLogoDM.png'; // dark mode logo
                             }
 						}
 						setCookie('mode', currentMode, 30);

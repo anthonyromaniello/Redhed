@@ -22,11 +22,11 @@
                 const iconImg = document.querySelector('.changeScreenModeIcon img');
 
                 if (mode === 'darkMode') {
-                    if (iconImg) iconImg.src = 'lightModeIcon.png'; // Show light icon in dark mode
-                    if (CompanyLogo) CompanyLogo.src = 'RedhedLogoDM.png'; // Dark logo
+                    if (iconImg) iconImg.src = 'resources/lightModeIcon.png'; // Show light icon in dark mode
+                    if (CompanyLogo) CompanyLogo.src = 'resources/RedhedLogoDM.png'; // Dark logo
                 } else {
-                    if (iconImg) iconImg.src = 'darkModeIcon.png'; // Show dark icon in light mode
-                    if (CompanyLogo) CompanyLogo.src = 'RedhedLogoLM.png'; // Light logo
+                    if (iconImg) iconImg.src = 'resources/darkModeIcon.png'; // Show dark icon in light mode
+                    if (CompanyLogo) CompanyLogo.src = 'resources/RedhedLogoLM.png'; // Light logo
                 }
             }, 100);
 

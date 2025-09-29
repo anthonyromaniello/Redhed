@@ -28,13 +28,16 @@
     font-style:italic; 
 }
 
-/* This code is for the main background gradient on all pages */
-.backgroundGradient{
-    background: linear-gradient(145deg, #fff, #000000); /* changed from #1226d8, #685904 */
-    display: flex;
-    flex-direction: column;
+body {
+    background: url('resources/backgroundPhoto.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
+body {
+    background: url('resources/backgroundPhoto.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+ 
 /* This code is for the navigation bar */
 .navbar {
     background: #fff; /* changed from #121c55 */
@@ -193,21 +196,6 @@ body {
     text-align: center;
     margin: 0 auto;
     max-width: 600px;
-}
-
-/* This code is for the background video on the homepage */
-#bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100vw;
-    min-height: 100vh;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    object-fit: cover;
-    opacity: 1;
-    pointer-events: none;
 }
 
 /* This code is for the footer div */

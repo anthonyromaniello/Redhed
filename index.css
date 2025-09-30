@@ -33,7 +33,7 @@ body {
     background-size: cover;
 }
 
-body {
+.darkmode body {
     background: url('resources/backgroundPhoto.jpg') no-repeat center center fixed;
     background-size: cover;
 }
@@ -237,16 +237,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* --- DARK MODE: TRUE BLACK THEME --- */
-.darkMode {
-    background-color: #111 !important;
-    color: #ff0000 !important; /* changed from #FFD700 */
-}
-
-/* This code is for the dark mode background gradient */
-.darkMode .backgroundGradient {
-    background: linear-gradient(135deg, #222, #000) !important;
-}
 
 /* This code is for the dark mode navigation bar */
 .darkMode .navbar {
@@ -466,15 +456,7 @@ body {
   100%  {bottom:0px;}
 }
 
-/* --- DARK MODE STYLES --- */
-.darkMode,
-.darkMode body {
-    background: #111 !important;
-    color: #ff0000 !important; /* changed from #FFD700 */
-}
-
 /* Make all major containers and sections dark */
-.darkMode .backgroundGradient,
 .darkMode .about-section,
 .darkMode .founders-container,
 .darkMode .founderCard,
@@ -542,24 +524,14 @@ body {
     color: #ff0000 !important; /* changed from #FFD700 */
 }
 
-/* Adjust icon blocks if you use them */
-.darkMode .service-icon-block {
-    background: rgba(30, 30, 30, 0.96) !important;
-    color: #ff0000 !important; /* changed from #FFD700 */
-}
 
 /* Optional: adjust box shadows for dark mode */
 .darkMode .card,
 .darkMode .founderCard,
-.darkMode .service-icon-block {
+.darkMode {
     box-shadow: 0 4px 16px rgba(0,0,0,0.5) !important;
 }
-/* Preserve Contact page background image in dark mode */
-body.darkMode.ContactPage,
-body.darkMode.ContactPage .contact-content {
-    background: url('BlackGuitarBackground.jpg') no-repeat center center fixed !important;
-    background-size: cover !important;
-}
+
 
 .darkMode .contact-content {
     background: #111 !important;

@@ -47,7 +47,7 @@
         fetch('posts.json')
             .then(response => response.json())
             .then(posts => {
-                posts.forEach(post => {
+                posts.slice().reverse().forEach(post => {
                     // Create a new article element for each post
                     const postElement = document.createElement('article');
                     postElement.className = 'blog-post';

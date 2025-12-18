@@ -1,0 +1,271 @@
+/* This code is for the title and description on the home page */
+.title {
+    display: block;
+    text-align: center;
+    background: rgba(18, 28, 85, 0.85);
+    color: #000; /* changed from #FFD700 */
+    padding: 0.6em 2em;
+    border-radius: 16px;
+    margin: 0.5em auto 0.1em auto;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    font-weight: bold;
+    font-size: 2em;
+    max-width: 700px;
+}
+/* This code is for the title description on the home page */
+.title-description {
+    display: block;
+    text-align: center;
+    background: rgba(18, 28, 85, 0.85);
+    color: #000; /* changed from #FFD700 */
+    padding: 0.4em 1.5em;
+    border-radius: 12px;
+    margin: 0 auto 0.5em auto;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    font-weight: bold;
+    font-size: 1.2em;
+    max-width: 600px;
+    font-style:italic; 
+}
+
+body {
+    background: url('/images/backgroundPhoto.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+ 
+/* This code is for the navigation bar */
+.navbar {
+    background: #fff; /* changed from #121c55 */
+    border-bottom: 3px solid #ff0000; /* changed from #FFD700 */
+    height: 100px;
+}
+
+/* This code is for the navigation bar links */
+.nav-link, .navbar-brand {
+    color: #000 !important; /* changed from #FFD700 */
+    cursor: pointer;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-left: 1em;
+    padding-right: 1em;
+    filter: text-shadow(1px 1px 2px black, 0 0 25px white, 0 0 5px white); /* changed blue/darkblue to white */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+/* This code is for the navigation bar brand hover effect */
+.navbar-brand:hover { 
+    filter: drop-shadow(3px 3px 6px black) drop-shadow(0 0 10px white) drop-shadow(0 0 10px white); /* changed blue/darkblue to white */
+    animation-name: NavigationBrandHoverAnimation;
+    animation-duration: 1s;
+    position: relative;
+}
+
+
+/* This code is for the navigation bar links when hovered */
+.nav-link {
+     margin-right: 1em !important;
+}
+
+/* This code is for the navigation bar links when hovered */
+.nav-link:hover {
+    color: #000 !important; /* changed from #ffffff */
+    animation-name: NavigationLinkHoverLinkAnimation;
+    animation-duration: 1s;
+    position: relative;
+}
+
+/* Animation for nav link hover underline */
+@keyframes NavigationLinkHoverLinkAnimation {
+  0%   {text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;}
+  25%  {text-shadow: 2px 2px 4px black, 0 0 30px white, 0 0 10px white;}
+  50%  {text-shadow: 3px 3px 6px black, 0 0 35px white, 0 0 15px white;}
+  75% {text-shadow: 2px 2px 4px black, 0 0 30px white, 0 0 10px white;}
+  100% {text-shadow: none;}
+}
+/* This code is for the navigation bar links when hovered */
+.nav-link:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0.2em;
+    height: 1px;
+    background: #000; /* changed from #ffffff */
+    border-radius: 2px;
+    animation: underlineAppear 1s forwards;
+    opacity: 0;
+}
+
+/*This code is for the navigation bar links when hovered */
+@keyframes underlineAppear {
+    0% {
+        width: 0;
+        left: 50%;
+        right: 50%;
+        opacity: 0;
+    }
+    50% {
+        width: 60%;
+        left: 20%;
+        right: 20%;
+        opacity: 1;
+    }
+    100% {
+        width: 60%;
+        left: 20%;
+        right: 20%;
+        opacity: 1;
+    }
+}
+
+/* This code is for the navigation bar links when clicked */
+.nav-link:active { 
+  position: relative;
+  animation-name: NavigationClickLinkAnimation;
+  animation-duration: 1s;
+}
+
+/* Animation for nav link click effect */
+@keyframes NavigationClickLinkAnimation {
+  0%   {bottom:0px;}
+  25%  {bottom:3px;}
+  50%  {bottom:6px;}
+  75%  {bottom:3px;}
+  100%  {bottom:0px;}
+}
+
+/* This code is for the navigation bar links when active */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+/* This code is for the navigation bar brand */
+.navbar-brand img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-top: 5px;
+}
+/* This code is for the moving background on the home page */
+body {
+    padding: 0;
+    margin: 0;
+    color: #000; /* changed from #222 */
+}
+
+
+
+/* This code is for the footer */
+.footer {
+   max-width: 100%; 
+   background: #fff; /* changed from #121c55 */
+   color: #ff0000; /* changed from #FFD700 */
+   padding: 60px 0 30px; 
+   margin-top: 3em;
+   position: bottom;
+}
+
+/* This code is for the footer row */
+.footer-row {
+    width:100%;
+}
+
+/* This code is for the footer title */
+.footer-title {
+    color: #000; /* changed from #ffffff */
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* This code is for the footer text */
+.footer-text {
+    color: #000; /* changed from #ffffff */
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* This code is for the footer div */
+.footerDiv {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    flex-wrap: wrap;
+}
+
+/* This code is for the footer icons */
+.footerIcons {
+   display: inline-block;
+   margin: 0 10px;
+}
+
+/* This code is for the footer icons when hovered */
+.footerIcons:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* This code is for the footer icons when hovered */
+.footerIcons:hover::after {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+/* --- KEYFRAMES FOR NAVIGATION --- */
+@keyframes NavigationBrandHoverAnimation {
+  0%   {filter: none;}
+  25%  {filter: drop-shadow(2px 2px 4px #ff0000);}
+  50%  {filter: drop-shadow(0 0 10px #ff0000);}
+  75%  {filter: drop-shadow(0 0 20px #ff0000);}
+  100% {filter: none;}
+}
+
+/* This code is for the navigation link hover animation */
+@keyframes NavigationLinkHoverLinkAnimation {
+  0%   {text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;}
+  25%  {text-shadow: 2px 2px 4px black, 0 0 30px white, 0 0 10px white;}
+  50%  {text-shadow: 3px 3px 6px black, 0 0 35px white, 0 0 15px white;}
+  75%  {text-shadow: 2px 2px 4px black, 0 0 30px white, 0 0 10px white;}
+  100% {text-shadow: none;}
+}
+
+/* This code is for the navigation link hover underline animation */
+@keyframes underlineAppear {
+    0% {
+        width: 0;
+        left: 50%;
+        right: 50%;
+        opacity: 0;
+    }
+    50% {
+        width: 60%;
+        left: 20%;
+        right: 20%;
+        opacity: 1;
+    }
+    100% {
+        width: 60%;
+        left: 20%;
+        right: 20%;
+        opacity: 1;
+    }
+}
+
+/* This code is for the navigation link click animation */
+@keyframes NavigationClickLinkAnimation {
+  0%   {bottom:0px;}
+  25%  {bottom:3px;}
+  50%  {bottom:6px;}
+  75%  {bottom:3px;}
+  100%  {bottom:0px;}
+}

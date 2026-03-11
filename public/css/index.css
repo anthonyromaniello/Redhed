@@ -1,31 +1,33 @@
 /* This code is for the title and description on the home page */
 .title {
     display: block;
-    text-align: center;
-    background: rgba(18, 28, 85, 0.85);
-    color: #000; /* changed from #FFD700 */
-    padding: 0.6em 2em;
-    border-radius: 16px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.9);
+    color: #ff0000;
+    padding: 0.8em 2em;
+    border-radius: 0;
+    border-left: 8px solid #ff0000;
     margin: 0.5em auto 0.1em auto;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    box-shadow: none;
     font-weight: bold;
     font-size: 2em;
-    max-width: 700px;
+    max-width: 900px;
 }
 /* This code is for the title description on the home page */
 .title-description {
     display: block;
-    text-align: center;
-    background: rgba(18, 28, 85, 0.85);
-    color: #000; /* changed from #FFD700 */
-    padding: 0.4em 1.5em;
-    border-radius: 12px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    padding: 0.6em 2em;
+    border-radius: 0;
+    border-left: 8px solid #ff0000;
     margin: 0 auto 0.5em auto;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    font-weight: bold;
+    box-shadow: none;
+    font-weight: normal;
     font-size: 1.2em;
-    max-width: 600px;
-    font-style:italic; 
+    max-width: 900px;
+    font-style: normal; 
 }
 
 body {
@@ -35,14 +37,14 @@ body {
  
 /* This code is for the navigation bar */
 .navbar {
-    background: #fff; /* changed from #121c55 */
-    border-bottom: 3px solid #ff0000; /* changed from #FFD700 */
+    background: #000000;
+    border-bottom: 4px solid #ff0000;
     height: 100px;
 }
 
 /* This code is for the navigation bar links */
 .nav-link, .navbar-brand {
-    color: #000 !important; /* changed from #FFD700 */
+    color: #ffffff !important;
     cursor: pointer;
     font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
     font-weight: 600;
@@ -51,14 +53,14 @@ body {
     text-transform: uppercase;
     padding-left: 1em;
     padding-right: 1em;
-    filter: text-shadow(1px 1px 2px black, 0 0 25px white, 0 0 5px white); /* changed blue/darkblue to white */
+    text-shadow: 1px 1px 2px rgba(255,0,0,0.5);
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 
 /* This code is for the navigation bar brand hover effect */
 .navbar-brand:hover { 
-    filter: drop-shadow(3px 3px 6px black) drop-shadow(0 0 10px white) drop-shadow(0 0 10px white); /* changed blue/darkblue to white */
+    filter: drop-shadow(3px 3px 6px #ff0000) drop-shadow(0 0 10px #ff0000) drop-shadow(0 0 10px #ff0000);
     animation-name: NavigationBrandHoverAnimation;
     animation-duration: 1s;
     position: relative;
@@ -72,7 +74,7 @@ body {
 
 /* This code is for the navigation bar links when hovered */
 .nav-link:hover {
-    color: #000 !important; /* changed from #ffffff */
+    color: #ff0000 !important;
     animation-name: NavigationLinkHoverLinkAnimation;
     animation-duration: 1s;
     position: relative;
@@ -80,11 +82,11 @@ body {
 
 /* Animation for nav link hover underline */
 @keyframes NavigationLinkHoverLinkAnimation {
-  0%   {text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;}
-  25%  {text-shadow: 2px 2px 4px black, 0 0 30px white, 0 0 10px white;}
-  50%  {text-shadow: 3px 3px 6px black, 0 0 35px white, 0 0 15px white;}
-  75% {text-shadow: 2px 2px 4px black, 0 0 30px white, 0 0 10px white;}
-  100% {text-shadow: none;}
+  0%   {text-shadow: 1px 1px 2px rgba(255,0,0,0.5);}
+  25%  {text-shadow: 2px 2px 4px #ff0000, 0 0 10px #ff0000;}
+  50%  {text-shadow: 3px 3px 6px #ff0000, 0 0 15px #ff0000;}
+  75% {text-shadow: 2px 2px 4px #ff0000, 0 0 10px #ff0000;}
+  100% {text-shadow: 1px 1px 2px rgba(255,0,0,0.5);}
 }
 /* This code is for the navigation bar links when hovered */
 .nav-link:hover::after {
@@ -94,8 +96,8 @@ body {
     left: 20%;
     right: 20%;
     bottom: 0.2em;
-    height: 1px;
-    background: #000; /* changed from #ffffff */
+    height: 2px;
+    background: #ff0000;
     border-radius: 2px;
     animation: underlineAppear 1s forwards;
     opacity: 0;
@@ -154,7 +156,7 @@ body {
 body {
     padding: 0;
     margin: 0;
-    color: #000; /* changed from #222 */
+    color: #ffffff;
 }
 
 
@@ -162,11 +164,12 @@ body {
 /* This code is for the footer */
 .footer {
    max-width: 100%; 
-   background: #fff; /* changed from #121c55 */
-   color: #ff0000; /* changed from #FFD700 */
+   background: #000000;
+   color: #ff0000;
    padding: 60px 0 30px; 
    margin-top: 3em;
    position: bottom;
+   border-top: 4px solid #ff0000;
 }
 
 /* This code is for the footer row */
@@ -176,19 +179,20 @@ body {
 
 /* This code is for the footer title */
 .footer-title {
-    color: #000; /* changed from #ffffff */
+    color: #ff0000;
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 20px;
-    text-transform: uppercase;
-    text-align: center;
+    text-transform: lowercase;
+    text-align: left;
+    letter-spacing: 0.05em;
 }
 
 /* This code is for the footer text */
 .footer-text {
-    color: #000; /* changed from #ffffff */
+    color: #ffffff;
     font-size: 1.1rem;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     max-width: 600px;
 }
@@ -232,11 +236,11 @@ body {
 
 /* This code is for the navigation link hover animation */
 @keyframes NavigationLinkHoverLinkAnimation {
-  0%   {text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;}
-  25%  {text-shadow: 2px 2px 4px black, 0 0 30px white, 0 0 10px white;}
-  50%  {text-shadow: 3px 3px 6px black, 0 0 35px white, 0 0 15px white;}
-  75%  {text-shadow: 2px 2px 4px black, 0 0 30px white, 0 0 10px white;}
-  100% {text-shadow: none;}
+  0%   {text-shadow: 1px 1px 2px rgba(255,0,0,0.5);}
+  25%  {text-shadow: 2px 2px 4px #ff0000, 0 0 10px #ff0000;}
+  50%  {text-shadow: 3px 3px 6px #ff0000, 0 0 15px #ff0000;}
+  75% {text-shadow: 2px 2px 4px #ff0000, 0 0 10px #ff0000;}
+  100% {text-shadow: 1px 1px 2px rgba(255,0,0,0.5);}
 }
 
 /* This code is for the navigation link hover underline animation */

@@ -5,39 +5,47 @@
     <link rel="stylesheet" href="/css/index.css">
     <style>
         .welcome-section {
-            background: #fff;
-            color: #000;
-            border-radius: 18px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
-            max-width: 800px;
-            margin: 8em auto 19.1em auto;
-            padding: 2em 2.5em;
-            text-align: center;
+            background: rgba(0, 0, 0, 0.95);
+            color: #ffffff;
+            border-radius: 0;
+            box-shadow: none;
+            max-width: 900px;
+            margin: 6em auto 19.1em auto;
+            padding: 3em 3em;
+            text-align: left;
+            border-left: 8px solid #ff0000;
         }
         .welcome-heading {
-            font-size: 2em;
+            font-size: 2.5em;
             font-weight: bold;
-            margin-bottom: 1em;
-            color: #FF2B2B;
+            margin-bottom: 0.8em;
+            color: #ff0000;
+            text-transform: lowercase;
+            letter-spacing: 0.02em;
         }
         .welcome-overview {
             font-size: 1.15em;
-            color: #000;
-            line-height: 1.6;
+            color: #ffffff;
+            line-height: 1.8;
             margin-bottom: 0;
         }
         .view-more-btn {
-            background: #FF2B2B;
-            color: #000000;
+            background: #ff0000;
+            color: #ffffff;
             border: none;
-            border-radius: 12px;
-            padding: 0.6em 1.5em;
-            font-size: 1.1em;
+            border-radius: 0;
+            padding: 0.8em 2em;
+            font-size: 1em;
+            font-weight: bold;
             cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
             transition: background 0.3s ease;
+            margin-top: 1.5em;
+            display: inline-block;
         }
         .view-more-btn:hover {
-            background: #e60000;
+            background: #cc0000;
         }
         .founders-container {
             display: flex;
@@ -49,29 +57,32 @@
             flex-wrap: wrap;
         }
         .founderCard {
-            background: rgba(255, 255, 255, 0.85);
-            border-radius: 18px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
-            padding: 2em 1em;
-            align-items: center;
+            background: rgba(0, 0, 0, 0.95);
+            border: none;
+            border-left: 6px solid #ff0000;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 2em 2em;
             display: flex;
             flex-direction: column;
             width: auto;
             margin: 1em 0;
         }
         .founder-name {
-            color: #FF2B2B;
-            font-size: 1.3em;
+            color: #ff0000;
+            font-size: 1.5em;
             font-weight: bold;
-            margin-bottom: 0.2em;
-            text-align: center;
+            margin-bottom: 0.3em;
+            text-align: left;
+            text-transform: lowercase;
+            letter-spacing: 0.02em;
         }
         .founder-title {
-            color: #000;
+            color: #ffffff;
             font-size: 1.05em;
-            font-style: italic;
+            font-style: normal;
             margin-bottom: 0.7em;
-            text-align: center;
+            text-align: left;
         }
         .founderCard img {
             width: auto;
@@ -91,13 +102,15 @@
     <%- include('partials/header') %>
 
     <div class="welcome-section">
-        <h2 class="welcome-heading">Welcome to RedHed</h2>
+        <h2 class="welcome-heading">bio</h2>
         <p class="welcome-overview">
-            Redhed is an indie band based out of Vaughan, Ontario.<br><br>
-            Blending elements of rock, indie, and punk, Redhed aims to fill the absence of local bands, venues, or role models in the suburbs <br><br>
-            <span style="color:red">Redhed</span> isn't just a band, but an answer to that silence.
+            Formed within the streets of Woodbridge, Ontario, <span style="color:#ff0000; font-weight: bold;">redhed</span> is a five piece band consisting of Iris Raggs (vocals), Anthony Arrigo (drums), Anthony Romaniello (lead guitar), Jack Kirwan (guitar), and Jaylen Morley (Bass).<br><br>
+            
+            Inspired by the sonic identities of Paramore, Pearl Jam and The Strokes, <span style="color:#ff0000; font-weight: bold;">redhed</span> is the result of powerful vocals, while being on the edge of glory for every genre they explore. <span style="color:#ff0000; font-weight: bold;">redhed</span> has shared the stage with the likes of Noise Hotel, BRGHTLIGHTS and Chlorine and continues to grow within the Toronto music scene.<br><br>
+            
+            Where there is an absence of local bands, venues and punk rock, <span style="color:#ff0000; font-weight: bold;">redhed</span> is the answer to that silence.
         </p>
-        <br><button class="view-more-btn" onclick="window.location.href='/news'">View More</button>
+        <button class="view-more-btn" onclick="window.location.href='/news'">upcoming shows</button>
     </div>
 
     <div class="founders-container">

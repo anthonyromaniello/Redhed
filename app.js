@@ -40,13 +40,20 @@ app.get('/data/Posts.json', (req, res) => {
     res.sendFile(path.join(__dirname, 'data', 'Posts.json'));
 });
 
-// API route for merchandise reservation (if you implement backend)
+/**
+ * API route for merchandise reservation (if you implement backend)
+ * 
+ * 
+ * 
 app.post('/reserve', (req, res) => {
     const { customerId, merchId } = req.body;
     // TODO: Add database logic here to save the reservation
     console.log(`Reservation request: Customer ${customerId}, Merch ${merchId}`);
     res.json({ message: 'Reservation received! (Backend not yet implemented)' });
 });
+
+ */
+
 
 // Start server
 app.listen(PORT, () => {

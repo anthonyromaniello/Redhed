@@ -16,27 +16,31 @@
             .then(posts => {
                 posts.slice().reverse().forEach(post => {
                     // Create a new article element for each post
-                    const postElement = document.createElement('article');
-                    postElement.className = 'blog-post';
 
-                    // Populate the post content with title, meta, and content
-                    postElement.innerHTML = `
-                        <h2 class="blog-post-title">${post.title}</h2>
-                        <div class="blog-post-meta">
-                            <span>Published on ${new Date(post.date).toLocaleDateString('en-US', { 
-                                year: 'numeric', 
-                                month: 'long', 
-                                day: 'numeric' 
-                            })}</span> • 
-                            <span>${post.category}</span>
-                        </div>
-                        <div class="blog-post-content">
-                            ${post.content}
-                        </div>
-                    `;
+                    if(post.published) {
+                        const postElement = document.createElement('article');
+                        postElement.className = 'blog-post';
 
-                    // Add the post to the blog list container
-                    blogList.appendChild(postElement);
+                        // Populate the post content with title, meta, and content
+                        postElement.innerHTML = `
+                            <h2 class="blog-post-title">${post.title}</h2>
+                            <div class="blog-post-meta">
+                                <span>Published on ${new Date(post.date).toLocaleDateString('en-US', { 
+                                    year: 'numeric', 
+                                    month: 'long', 
+                                    day: 'numeric' 
+                                })}</span> • 
+                                <span>${post.category}</span>
+                            </div>
+                            <div class="blog-post-content">
+                                ${post.content}
+                            </div>
+                        `;
+
+                        // Add the post to the blog list container
+                        blogList.appendChild(postElement);
+
+                    }
                 });
             })
             .catch(error => console.error('Error loading blog posts:', error));

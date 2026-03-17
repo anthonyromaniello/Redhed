@@ -39,13 +39,18 @@
             display: inline-block;
             transition: background 0.3s ease;
             border: none;
+            /**
             cursor: pointer;
+            */
             text-transform: uppercase;
             letter-spacing: 0.1em;
         }
+        /**
         .service-button:hover{
             background: #cc0000;
-        }   
+        }  
+        */
+         
         .services-header-section {
             background: rgba(0, 0, 0, 0.95);
             color: #ffffff;
@@ -88,11 +93,12 @@
     <div class="services-icons-container">
         <div class="service-icon-block">
             <img src="/images/BlackTee.png" alt="Custom Builds Icon" style="width: 400px; height: 400px; margin-bottom:0.7em;">
-            <button class="service-button" style="width: 400px" onclick="reserveMerch(1, 101)">Black Tee - $20</button>
+            <div class="service-button" style="width: 400px">Black Tee - $20</div>
         </div>
     </div>
 
     <script>
+        //add "onclick="reserveMerch(1, 101)" to button style if backend for reservation is ever needed
         function reserveMerch(customerId, merchId) {
             fetch('/reserve', {
                 method: 'POST',

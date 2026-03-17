@@ -18,5 +18,25 @@
     "content": "<p>Our newest single 'Little Tragedies' is out now on all major streaming platforms! we put our hearts into this one, so show it some love! thank you to everyone who helped make this project a reality</p> <div><img src='/images/little_tragedies.png' alt='Little Tragedies Album Art'></div> <a href=\"https://open.spotify.com/track/2lCFhRdA7THL0dTKcIOkjl?si=f38732c5f1c04e32\" class=\"read-more\" target=\"_blank\">Listen on Spotify!</a>",
     "published": true,
     "tags": ["new-release", "singles"]
+  },
+  {
+    "id": 3,
+    "title": "New Single Release: Aftersun",
+    "date": "2026-04-23T00:00:00Z",
+    "category": "New Releases",
+    "excerpt": "to be added",
+    "content": "<p>to be added</a>",
+    "published": false,
+    "tags": ["new-release", "singles"]
+  },
+  {
+    "id": 4,
+    "title": "New Single Rerelease: Little Tragedies",
+    "date": "2026-03-16T00:00:00Z",
+    "category": "New Releases",
+    "excerpt": "to be added",
+    "content": "<p>to be added</a>",
+    "published": false,
+    "tags": ["new-release", "singles"]
   }
 ]

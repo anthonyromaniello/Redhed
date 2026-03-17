@@ -3,6 +3,9 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Trust proxy - important when behind reverse proxy (Heroku, Render, etc.)
+app.set('trust proxy', 1);
+
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -54,6 +57,16 @@ app.post('/reserve', (req, res) => {
 
  */
 
+// 404 handler - must be after all other routes
+app.use((req, res) => {
+    res.status(404).send('Page not found');
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something went wrong!');
+});
 
 // Start server
 app.listen(PORT, () => {

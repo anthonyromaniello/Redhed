@@ -5,7 +5,9 @@
     "date": "2025-03-30T00:00:00Z",
     "category": "New Releases",
     "excerpt": "Our first single, Seveneleven, is now available on all major streaming platforms.",
-    "content": "<p>Our first single, Seveneleven, is now available on all major streaming platforms.</p> <div><img src='/images/seveneleven.png' alt='Seveneleven Album Art'></div> <a href=\"https://open.spotify.com/track/6ri0CjdHKUFbRh5y8R2yFa?si=282c98cfdf2c4c4b\" class=\"read-more\" target=\"_blank\">Listen on Spotify!</a>",
+    "content": "<p>Our first single, Seveneleven, is now available on all major streaming platforms.</p>",
+    "image": "/images/seveneleven.png",
+    "url": "https://open.spotify.com/track/6ri0CjdHKUFbRh5y8R2yFa?si=282c98cfdf2c4c4b",
     "published": true,
     "tags": ["new-release", "singles"]
   },
@@ -15,27 +17,44 @@
     "date": "2025-08-10T00:00:00Z",
     "category": "New Releases",
     "excerpt": "Our newest single 'Little Tragedies' is out now on all major streaming platforms! we put our hearts into this one, so show it some love! thank you to everyone who helped make this project a reality",
-    "content": "<p>Our newest single 'Little Tragedies' is out now on all major streaming platforms! we put our hearts into this one, so show it some love! thank you to everyone who helped make this project a reality</p> <div><img src='/images/little_tragedies.png' alt='Little Tragedies Album Art'></div> <a href=\"https://open.spotify.com/track/2lCFhRdA7THL0dTKcIOkjl?si=f38732c5f1c04e32\" class=\"read-more\" target=\"_blank\">Listen on Spotify!</a>",
+    "content": "<p>Our newest single 'Little Tragedies' is out now on all major streaming platforms! we put our hearts into this one, so show it some love! thank you to everyone who helped make this project a reality</p>",
+    "image": "/images/little_tragedies.png",
+    "url": "https://open.spotify.com/track/2lCFhRdA7THL0dTKcIOkjl?si=f38732c5f1c04e32",
     "published": true,
     "tags": ["new-release", "singles"]
   },
   {
     "id": 3,
+    "title": "Breaking Sound Presents: Redhed at the Riv",
+    "date": "2026-03-26T00:00:00Z",
+    "category": "Upcoming Show",
+    "content": "<p>Redhed come back to Toronto at the Rivoli! We're back in the city playing the Breaking Sound showcase at the Rivoli March 26th alongisde Josh Keenan and more! come party hard with Redhed on Queen St for a wonderous thursday night! tickets will sell out fast to get yours asap!</a>",
+    "image": "/images/breaking_sound_rivoli.png",
+    "url": "https://www.tixr.com/groups/breakingsoundcanada/events/breaking-sound-canada-at-rivoli-03-26-173341",
+    "published": true,
+    "tags": ["upcoming-show", "in-town"]
+  },
+  {
+    "id": 0,
     "title": "New Single Release: Aftersun",
     "date": "2026-04-23T00:00:00Z",
     "category": "New Releases",
     "excerpt": "to be added",
     "content": "<p>to be added</a>",
+    "image": null,
+    "url": null,
     "published": false,
     "tags": ["new-release", "singles"]
   },
   {
-    "id": 4,
+    "id": 0,
     "title": "New Single Rerelease: Little Tragedies",
     "date": "2026-03-16T00:00:00Z",
     "category": "New Releases",
     "excerpt": "to be added",
     "content": "<p>to be added</a>",
+    "image": "/images/little_tragedies.png",
+    "url": null,
     "published": false,
     "tags": ["new-release", "singles"]
   }

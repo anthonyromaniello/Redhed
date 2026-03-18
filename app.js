@@ -59,7 +59,7 @@ app.post('/reserve', (req, res) => {
 
 // 404 handler - must be after all other routes
 app.use((req, res) => {
-    res.status(404).send('Page not found');
+    res.status(404).send('Page not found - site under maintenance');
 });
 
 // Error handling middleware

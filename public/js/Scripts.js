@@ -35,6 +35,8 @@
                             <div class="blog-post-content">
                                 ${post.content}
                             </div>
+                            ${post.image ? `<div><img src="${post.image}" alt="Display Image"></div>` : ''}
+                            ${post.url ? `<div class="blog-post-link"><a href="${post.url}" class="read-more" target="_blank">See More</a></div>` : ''}
                         `;
 
                         // Add the post to the blog list container
